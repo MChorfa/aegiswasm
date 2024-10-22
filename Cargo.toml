@@ -1,17 +1,8 @@
 [workspace]
 members = [
-    "src",
-    "crates/core",
-    "crates/executor",
     "crates/orchestrator",
-    "crates/plugins",
-    "plugins",
-    "cmd",
-    "wasm"
+    "crates/executor",
+    "crates/plugin-system",
+    "crates/wasm-pipeline",
+    "crates/observability"
 ]
-
-[profile.dev]
-opt-level = 0
-
-[profile.release]
-opt-level = 3
