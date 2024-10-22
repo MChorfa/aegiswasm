@@ -2,9 +2,9 @@
 
 A Modular, Scalable, and Secure WebAssembly-Based Machine Learning Framework
 
-## DISCLAIMER
+## DISCLAIMER ❗❗❗
 
-This project is a fictional example created for educational purposes. It does not represent a real company or product.
+<span style="color:red;">❗ This project is a fictional example created for educational purposes. It does not represent a real company or product. ❗</span>
 
 ## Overview
 
