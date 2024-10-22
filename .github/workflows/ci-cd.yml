@@ -1,0 +1,19 @@
+name: CI/CD Pipeline
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      - name: Build Project
+        run: cargo build --workspace --release
+      - name: Run Tests
+        run: cargo test --workspace --all-features
+      - name: Lint Code
+        run: cargo clippy --all-targets --all-features -- -D warnings
